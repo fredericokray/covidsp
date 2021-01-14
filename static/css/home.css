@@ -1,0 +1,202 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #fefefe;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#chart { position: relative; }
+
+#viz {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+}
+
+#title {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 100;
+    top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+#chart-holder{
+    width:100%;
+    height:1300px;
+    position:relative;
+}
+
+#chart-holder svg{
+    width:100%;
+    height:100%;
+}
+
+#map, #graph1, #graph2{
+    position:absolute;
+}
+
+#map{
+    background:azure;
+    top:10px;
+    width:600px;
+    height:400px;
+}
+
+#graph1{
+    background:azure;
+    top:10px;
+    left:610px;
+    width:390px;
+    height:195px;
+}
+
+#graph2{
+    background:azure;
+    top:215px;
+    left:610px;
+    width:390px;
+    height:195px;
+}
+
+#graph3{
+    background:azure;
+    position:relative;
+    top:420px;
+    width:495px;
+    height:300px;
+}
+
+#graph4{
+    background:azure;
+    position:relative;
+    top:120px;
+    left:505px;
+    width:495px;
+    height:300px;
+}
+
+#graph5{
+    background:black;
+    position:relative;
+    top:130px;
+    width:495px;
+    height:300px;
+}
+
+#graph6{
+    background:black;
+    position:relative;
+    top:-170px;
+    left:505px;
+    width:495px;
+    height:300px;
+}
+
+.bar.active { fill: #418FFF; }
+.bar { fill: red; }
+.bar:hover { fill: brown; }
+.axis { font: 10px sans-serif; }
+.axis-label{ }
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+.x.axis path { display: none; }
+#y-axis-label { font-size: 11px }
+.labels text { font-size:11px; }
+path.active {
+    fill: yellow;
+}
+
+#map-tooltip {
+    position: absolute;
+    pointer-events:none;
+    color:#eee;
+    font-size:12px;
+    opacity:0.8; /* a little transparent */
+    background:#222;
+    border:2px solid #555;
+    border-color: black;
+    padding:10px;
+    left: -9999px;
+    width: 150px;
+    height: 150px;
+    top: 100px
+}
+
+#map-tooltip h2 {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#graph-tooltip {
+    position: absolute;
+    pointer-events:none;
+    color:#eee;
+    font-size:12px;
+    opacity:0.8; /* a little transparent */
+    background:#222;
+    border:2px solid #555;
+    border-color: black;
+    padding:10px;
+    left: -9999px;
+    width: 150px;
+    height: 170px;
+    top: 80px
+}
+
+#graph-tooltip h2 {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#graph-tooltip2 {
+    position: absolute;
+    pointer-events:none;
+    color:#eee;
+    font-size:12px;
+    opacity:0.8; /* a little transparent */
+    background:#222;
+    border:2px solid #555;
+    border-color: black;
+    padding:10px;
+    left: -9999px;
+    width: 150px;
+    height: 90px;
+    top: 80px
+}
+
+#graph-tooltip2 h2 {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#list{
+    background:azure;
+    position:relative;
+    top:130px;
+    width:1000px;
+    height:651px;
+}
+
+#list table{
+    position: relative;
+    width: 100%;
+    border: 1px solid black;
+}
+
+#list table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#list td{
+    text-align: center;
+}

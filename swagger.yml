@@ -1,0 +1,50 @@
+swagger: "2.0"
+info:
+  description: Casos de Covid no Estado de São Paulo
+  version: "1.0.0"
+  title: Covidsp API
+consumes:
+  - application/json
+produces:
+  - application/json
+
+basePath: /api
+
+# Paths supported by the server application
+paths:
+  /covidcases:
+    get:
+      parameters:
+        - in: "query"
+          name: nome_munic
+          type: string
+      operationId: access.read_covidtable_munic
+      tags:
+        - CovidTableCases
+      summary: Acesso aos casos de covid por município
+      description: Acesso aos casos de covid por município
+      responses:
+        200:
+          description: A leitura dos dados foi bem sucedida
+
+  /covidcasestotal:
+    get:
+      operationId: access.read_covidtable_total
+      tags:
+        - CovidTableCases
+      summary: Acesso ao total de casos de covid no Estado de São Paulo
+      description: Acesso ao total de casos de covid no Estado de São Paulo
+      responses:
+        200:
+          description: A leitura dos dados foi bem sucedida
+
+  /covidcases_laststate:
+    get:
+      operationId: access.read_covidtable_laststate
+      tags:
+        - CovidTableCases
+      summary: Acesso aos dados referentes ao ultimo dia de atualização do bando de dados
+      description: Acesso aos dados referentes ao ultimo dia de atualização do bando de dados
+      responses:
+        200:
+          description: A leitura dos dados foi bem sucedida
